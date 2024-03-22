@@ -1,0 +1,20 @@
+.semana{
+    border: 1px solid #414141;
+    border-radius: 5px;
+    padding: 0.2em;
+    align-items: center;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    margin: .5em 0;
+}

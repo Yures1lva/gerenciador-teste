@@ -1,0 +1,39 @@
+<section class="container">
+    <h1>Gerenciador de horas trabalhadas</h1>
+
+    <p>Aqui você pode adiconar o horário trabalhado de cada dia</p>
+
+    <p class="alert"> 
+        como não tem sistema de autênticação na aplicação, essa aba simula a funcionalidade de um colaborador após o login!
+    </p>
+
+    <h3>Selecione o funcionário</h3>
+
+
+    <br>
+
+    <p>selecione a data </p>
+
+    <!-- picker de data aqui -->
+    <select name="dia" id="dia">
+ 
+        <option value="1">dia 01</option>
+        <option value="2">dia 02</option>
+        <option value="3">dia 03</option>
+        <option value="4">dia 04</option>
+    
+    </select>
+
+    <form class="hours">
+        <div class="card">
+            <input type="time" min="08:00" max="18:00">
+        </div>
+
+        <div class="card">
+            <input type="time" min="08:00" max="18:00">
+        </div>
+        <input type="submit" value="Bater ponto">
+
+    </form>   
+    
+</section>

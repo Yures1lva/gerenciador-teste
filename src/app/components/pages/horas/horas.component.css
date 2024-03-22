@@ -1,0 +1,22 @@
+select{
+    border:1px solid #073A78;
+    border-radius: 5px;
+    padding: .6em 1em;
+    margin-bottom: 20px;
+    color: #606060;
+}
+
+.hours{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    margin-right: 1em;
+    padding-top: 1em;
+    /* width: 40px; */
+}
+
+input{
+    /* width: 3em; */
+}

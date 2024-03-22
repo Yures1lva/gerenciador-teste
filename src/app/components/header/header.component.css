@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;   
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 2em;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+ul li a:hover{
+    text-decoration: underline #073A78;
+    
+}
+
+header nav img{
+    height: 60px;
+}
