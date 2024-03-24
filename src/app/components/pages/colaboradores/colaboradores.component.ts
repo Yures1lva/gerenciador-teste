@@ -11,19 +11,18 @@ import { ColaboradorService } from '../../../services/user.service';
 export class ColaboradoresComponent implements OnInit {
 
   Colaboradores: Colaborador[] = []
-  ColaboradoresTodos: Colaborador[] = []
+  // ColaboradoresTodos: Colaborador[] = []
 
 
   constructor(private colaboradorService: ColaboradorService){}
 
   ngOnInit(): void {
     this.colaboradorService.getColaboradores().subscribe((items) => {
-      const data = items.dados;
-      console.log(items.dados)
+      const data = items.dados
+      this.Colaboradores = data
+     console.log(this.Colaboradores)
 
-      data.map((item) => {
-        console.log(item, "paassando")
-      })
+
     })
   }
 

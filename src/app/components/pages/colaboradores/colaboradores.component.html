@@ -1,4 +1,30 @@
 <section class="container" >
     <h1>Gerenciamento de colaboradores</h1>
-    <app-form-colaborador></app-form-colaborador>
+
+    <h3>Editar um funcionário</h3>
+
+    <table class="">
+        <thead>
+            <tr>
+                <th><h4>Nome</h4></th>
+                <th><h4>Cargo</h4></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of Colaboradores">
+            <tr>
+                <td><h4>{{item.nome}}</h4></td>
+                <td><h4>{{item.cargo}}</h4></td>
+                <td>
+                    <button>Editar</button>
+                    <button>Detalhes</button>
+                </td>
+                <td>Excluir</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
 </section>

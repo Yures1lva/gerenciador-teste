@@ -1,7 +1,7 @@
 export interface Colaborador {
     id?: number
-    name: string
-    registration: number
-    role: string 
-    salary: number
+    nome: string
+    cargo: number
+    matricula: string 
+    salario: number
 }
