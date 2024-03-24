@@ -1,4 +1,4 @@
-export interface User {
+export interface Colaborador {
     id?: number
     name: string
     registration: number

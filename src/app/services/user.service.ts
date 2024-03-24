@@ -2,20 +2,22 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { Response } from '../Response';
-import { User } from '../User';
+import { Response } from '../models/Response';
+import { Colaborador } from '../models/Colaboradores';
+import { environment } from '../../environments/environment.development';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class ColaboradorService {
 
-  private apiUrl = ''
+  private apiUrl = `${environment.ApiUrl}/Colaborador`
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): Observable<Response<User[]>>{
-    return this.http.get<Response<User[]>>(this.apiUrl)
+  getColaboradores(): Observable<Response<Colaborador[]>>{
+    return this.http.get<Response<Colaborador[]>>(this.apiUrl)
+
   }
 }

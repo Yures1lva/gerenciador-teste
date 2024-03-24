@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../../../User';
-import { UserService } from '../../../services/user.service';
+import { Colaborador } from '../../../models/Colaboradores';
+import { ColaboradorService } from '../../../services/user.service';
 
 
 @Component({
@@ -10,14 +10,18 @@ import { UserService } from '../../../services/user.service';
 })
 export class ColaboradoresComponent implements OnInit {
 
-  allUsers: User[] = []
+  Colaboradores: Colaborador[] = []
+  ColaboradoresTodos: Colaborador[] = []
 
-  constructor(private userService: UserService){}
+
+  constructor(private colaboradorService: ColaboradorService){}
 
   ngOnInit(): void {
-    this.userService.getUsers().subscribe((items) => {
-      const data = items.data;
-      this.allUsers = data
+    this.colaboradorService.getColaboradores().subscribe((items) => {
+      const data = items.dados;
+      console.log(items)
+
+      this.Colaboradores = data
     })
   }
 
