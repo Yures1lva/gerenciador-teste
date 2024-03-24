@@ -12,7 +12,7 @@ import { environment } from '../../environments/environment';
 })
 export class ColaboradorService {
 
-  private apiUrl = `${environment.ApiUrl}/Colaborador`
+  private apiUrl = `/Colaborador`
 
   constructor(private http: HttpClient) { }
 

@@ -85,7 +85,8 @@
               "buildTarget": "gerenciador:build:production"
             },
             "development": {
-              "buildTarget": "gerenciador:build:development"
+              "buildTarget": "gerenciador:build:development",
+              "proxyConfig": "src/proxy.config.js"
             }
           },
           "defaultConfiguration": "development"

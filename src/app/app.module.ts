@@ -10,7 +10,7 @@ import { RelatoriosComponent } from './components/pages/relatorios/relatorios.co
 import { HorasComponent } from './components/pages/horas/horas.component';
 import { FormColaboradorComponent } from './components/form-colaborador/form-colaborador.component';
 import { SelectUserComponent } from './components/select-user/select-user.component';
-import { TokenInterceptor } from './components/interceptors/token.interceptor';
+// import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
   declarations: [
