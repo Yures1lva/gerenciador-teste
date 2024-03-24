@@ -19,9 +19,11 @@ export class ColaboradoresComponent implements OnInit {
   ngOnInit(): void {
     this.colaboradorService.getColaboradores().subscribe((items) => {
       const data = items.dados;
-      console.log(items)
+      console.log(items.dados)
 
-      this.Colaboradores = data
+      data.map((item) => {
+        console.log(item, "paassando")
+      })
     })
   }
 

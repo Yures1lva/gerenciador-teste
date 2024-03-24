@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Response } from '../models/Response';
 import { Colaborador } from '../models/Colaboradores';
-import { environment } from '../../environments/environment.development';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
