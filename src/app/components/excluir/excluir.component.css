@@ -9,6 +9,12 @@ div{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+}
+
+p{
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
 }
 
 button{

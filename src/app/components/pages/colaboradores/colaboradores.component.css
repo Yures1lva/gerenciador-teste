@@ -1,2 +1,37 @@
 
+.card{
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+
+
+th h4{
+ font-weight: 600;
+text-align: left;
+}
+
+.detalhes{
+    background-color: white;
+    color: #073A78;
+    border: 2px solid #073A78;
+}
+
+.detalhes:hover{
+    background-color: #073A78;
+    color: white;
+    border: 2px solid #073A78;
+}
+
+tbody tr td button{
+    display: block;
+    margin: 0.8em 1.5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
 
