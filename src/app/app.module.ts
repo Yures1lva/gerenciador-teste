@@ -12,6 +12,7 @@ import { FormColaboradorComponent } from './components/form-colaborador/form-col
 import { provideRouter } from '@angular/router';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MessagesComponent } from './components/messages/messages.component';
 // import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HorasComponent,
     FormColaboradorComponent,
     CadastroComponent,
+    MessagesComponent,
 
   ],
   imports: [

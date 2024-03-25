@@ -1,6 +1,7 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { Colaborador } from '../../models/Colaboradores'; 
 import { FormControl, FormGroup } from '@angular/forms';
+import { MessagesService } from '../../services/messages.service';
 
 @Component({
   selector: 'app-form-colaborador',
@@ -18,7 +19,9 @@ export class FormColaboradorComponent implements OnInit {
 
 
 
-  constructor(){}
+  constructor(public messageService: MessagesService){
+
+  }
 
   ngOnInit(): void {
     
@@ -31,12 +34,16 @@ export class FormColaboradorComponent implements OnInit {
 
     })
 
+
+
   }
 
   submit(){
 
    this.onSubimit.emit(this.colaboradorForm.value)
+   this.messageService.add("Colaborador adicionado com sucesso");
 
   }
+
 
 }

@@ -1,0 +1,24 @@
+.message{
+    position: fixed;
+    top: 3em;
+    width: 50%;
+    margin-left: 50%;
+    left: -25%;
+    z-index: 10;
+    padding: 1em;
+    
+    
+}
+
+.message div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clear{
+    padding: 0.3em;
+    margin: 0;
+    height: 3em;
+    min-width: 3em;
+}
