@@ -35,11 +35,13 @@ export class ColaboradoresComponent implements OnInit {
     })
   }
 
-  OpenDialog(){
+  OpenDialog(id?: number){
     console.log("oi")
     this.dialog.open(ExcluirComponent, {
-      width: '450px',
-      height: '450px'
+      width: '550px',
+      data: {
+        id: id
+      }
     })
   }
 

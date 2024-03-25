@@ -1,0 +1,17 @@
+section{
+    padding: 2em;
+}
+h4{
+    font-weight: 600;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+button{
+    margin-right: 1em;
+    margin-top: 1em;
+}

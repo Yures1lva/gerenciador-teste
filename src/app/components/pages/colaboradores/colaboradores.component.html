@@ -23,7 +23,7 @@
                     <button routerLink="editar/{{item.id}}">Editar</button>
                     <button routerLink="detalhes/{{item.id}}" >Detalhes</button>
                 </td>
-                <td  ><button (click)="OpenDialog()" class="cancel-button">Excluir</button></td>
+                <td  ><button (click)="OpenDialog(item.id)" class="cancel-button">Excluir</button></td>
             </tr>
         </tbody>
 

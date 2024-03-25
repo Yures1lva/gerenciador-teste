@@ -1,4 +1,20 @@
-<section>
-    <h1>Deseja realmente excluir os dados de nome</h1>
+<section *ngIf="colaborador">
+    <h1>Deseja realmente excluir os dados de {{colaborador.nome}}?</h1>
     <p class="alert">Isso apagará todos os dados do colaborador permanentemente</p>
+
+    <div>
+        <h4>Colaborador:</h4>
+        <p>{{colaborador.nome}}</p>
+    </div>
+
+    <div>
+        <h4>Cargo:</h4>
+        <p>{{colaborador.cargo}}</p>
+    </div>
+
+    <div>
+        <button (click)="excluir()" > Confirmar</button>
+        <button routerLink="" class="cancel-button">Cancelar</button>
+    </div>
+
 </section>
