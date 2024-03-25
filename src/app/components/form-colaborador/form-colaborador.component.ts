@@ -45,7 +45,7 @@ export class FormColaboradorComponent implements OnInit {
   submit(){
 
    this.onSubimit.emit(this.colaboradorForm.value)
-   this.messageService.add(this.message);
+   this.messageService.add(this.message,);
     this.colaboradorForm.reset()
   }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
 import { ColaboradorService } from '../../../services/Colaborador/user.service';
+import { MessagesService } from '../../../services/messages.service';
 
 
 
@@ -14,10 +15,11 @@ export class ColaboradoresComponent implements OnInit {
  
 
   Colaboradores: Colaborador[] = []
+
   // ColaboradoresTodos: Colaborador[] = []
 
 
-  constructor(private colaboradorService: ColaboradorService){}
+  constructor(private colaboradorService: ColaboradorService, public messageService: MessagesService){}
 
   ngOnInit(): void {
     this.colaboradorService.getColaboradores().subscribe((items) => {
@@ -27,6 +29,10 @@ export class ColaboradoresComponent implements OnInit {
 
 
     })
+  }
+
+  excluir(){
+    this.messageService.add("Deseja realmente excluir o Colaborador?",)
   }
 
 

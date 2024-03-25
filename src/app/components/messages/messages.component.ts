@@ -7,7 +7,9 @@ import { MessagesService } from '../../services/messages.service';
   styleUrl: './messages.component.css'
 })
 export class MessagesComponent {
+  
+  excluir = '';
 
   constructor(public messageService: MessagesService){}
-
+  
 }

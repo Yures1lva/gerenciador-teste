@@ -10,7 +10,11 @@
     
 }
 
-.message div{
+.card{
+    border: 2px solid #073A78;
+}
+
+.message-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,4 +25,13 @@
     margin: 0;
     height: 3em;
     min-width: 3em;
+}
+
+button{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.cancel-button{
+    margin-left: 2em;
 }
