@@ -1,12 +1,12 @@
 .container-form{
-    display: flex;
+    justify-content: center;
 
 
 }
 
 .form-colaborador{
 
-    width: 48%;
+    /* width: 48%; */
     margin: 0 1em;
 
 }
@@ -35,6 +35,7 @@ form > div {
     padding: 1em 0;
 }
 
-.buttons input{
+button {
     margin-right: 2em;
 }
+
