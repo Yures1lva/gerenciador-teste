@@ -8,22 +8,33 @@
 
     width: 48%;
     margin: 0 1em;
-    
+
 }
 
 
 .form-group{
-
-    
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
 .form-group label{
-    margin-right: 0.4em; 
+    margin: 0 0.4em 0.4em 0;
+
 }
 
-form div {
+.form-group input{
+    margin: 0;
+}
+
+select{
+    margin: 0;
+}
+
+form > div {
     padding: 1em 0;
+}
+
+.buttons input{
+    margin-right: 2em;
 }

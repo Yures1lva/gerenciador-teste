@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
-import { HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import {  HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,8 +9,8 @@ import { ColaboradoresComponent } from './components/pages/colaboradores/colabor
 import { RelatoriosComponent } from './components/pages/relatorios/relatorios.component';
 import { HorasComponent } from './components/pages/horas/horas.component';
 import { FormColaboradorComponent } from './components/form-colaborador/form-colaborador.component';
-import { SelectUserComponent } from './components/select-user/select-user.component';
 import { provideRouter } from '@angular/router';
+import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 // import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { provideRouter } from '@angular/router';
     RelatoriosComponent,
     HorasComponent,
     FormColaboradorComponent,
-    SelectUserComponent
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

@@ -2,61 +2,46 @@
 
 <section class="form-colaborador card">
 
-
-
-
-
-
 <form >
     <div class="form-group">
         <label for="">Nome:</label>
-        <input type="text" placeholder="Funcionrio 1">
+        <input type="text" placeholder="nome" placeholder="Digite o nome completo" required>
     </div>
 
     <div class="form-group">
         <label for="">Matrícula:</label>
-        <input type="text" placeholder="15248684">
+        <input type="text" placeholder="Digite a matrícula" required>
     </div>
 
     <div class="form-group">
         <label for="">Cargo:</label>
-        <input type="text" placeholder="Gerente de vendas ">
+        <select id="cargo" formControlName="cargo">
+            <option  value="RH">RH</option>
+            <option  value="Analista de suporte">Analista de suporte</option>
+            <option  value="Analista de desenvolvimento jr">Analista de desenvolvimento jr</option>
+            <option  value="Tech Lead">Tech Lead</option>
+
+        </select>    
     </div>
 
     <div class="form-group">
         <label for="">Salário:</label>
-        <input type="text" placeholder=" 2500,00">
+        <input type="text" placeholder="Digite o salário" required>
     </div>
-    <input type="submit" value="Salvar">
+    <div class="buttons">
+        <input type="submit" value="Salvar">
+        <button class="cancel-button">Cancelar</button>
+    </div>
 </form>
 
 </section>
 
 <section class="form-colaborador card">
     <h3>Adicionar um Novo funcionário</h3>
+    <h3>Adicionar um Novo funcionário</h3>
+
     
-    <form >
-        <div class="form-group">
-            <label for="">Nome:</label>
-            <input type="text" placeholder="Digite o nome do funcionário ">
-        </div>
     
-        <div class="form-group">
-            <label for="">Matrícula:</label>
-            <input type="text" placeholder="Digite a Matrícula ">
-        </div>
-    
-        <div class="form-group">
-            <label for="">Cargo:</label>
-            <input type="text" placeholder="Digite o cargo ">
-        </div>
-    
-        <div class="form-group">
-            <label for="">Salário:</label>
-            <input type="text" placeholder="Digite o salario">
-        </div>
-        <input type="submit" value="Salvar">
-    </form>
     
     </section>
 </div>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectUserComponent } from './select-user.component';
+import { CadastroComponent } from './cadastro.component';
 
-describe('SelectUserComponent', () => {
-  let component: SelectUserComponent;
-  let fixture: ComponentFixture<SelectUserComponent>;
+describe('CadastroComponent', () => {
+  let component: CadastroComponent;
+  let fixture: ComponentFixture<CadastroComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SelectUserComponent]
+      declarations: [CadastroComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SelectUserComponent);
+    fixture = TestBed.createComponent(CadastroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

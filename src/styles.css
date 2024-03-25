@@ -38,14 +38,14 @@ label{
 }
 
 input{
-    padding: .5em;
+    padding: 0.9em;
     margin: .2em 0;
     border: 1px solid #b9b9b9;
     border-radius: 5px;
 }
 
-input[type=submit]{
-    padding: .5em 1.5em;
+input[type=submit], button{
+    padding: 1em 1.6em;
     background-color: #073A78;
     border: 0;
     color: white;
@@ -55,9 +55,23 @@ input[type=submit]{
     transition: ease .3s;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, button:hover{
    
     background-color: #0c4e9f;
+}
+
+.cancel-button{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    font-weight: 600;
+}
+
+.cancel-button:hover{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-weight: 600;
 }
 
 .card{
@@ -74,3 +88,10 @@ input[type=submit]:hover{
     letter-spacing: 0.1px;
 }
 
+select{
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    padding: .6em 1em;
+    margin-bottom: 20px;
+    color: #606060;
+}

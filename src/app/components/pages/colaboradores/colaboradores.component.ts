@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
 import { ColaboradorService } from '../../../services/user.service';
+
 
 
 @Component({
@@ -9,6 +10,8 @@ import { ColaboradorService } from '../../../services/user.service';
   styleUrl: './colaboradores.component.css'
 })
 export class ColaboradoresComponent implements OnInit {
+
+ 
 
   Colaboradores: Colaborador[] = []
   // ColaboradoresTodos: Colaborador[] = []
@@ -20,10 +23,11 @@ export class ColaboradoresComponent implements OnInit {
     this.colaboradorService.getColaboradores().subscribe((items) => {
       const data = items.dados
       this.Colaboradores = data
-     console.log(this.Colaboradores)
+     //console.log(this.Colaboradores)
 
 
     })
   }
+
 
 }
