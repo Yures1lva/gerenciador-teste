@@ -42,7 +42,7 @@ export class FormColaboradorComponent implements OnInit {
 
    this.onSubimit.emit(this.colaboradorForm.value)
    this.messageService.add("Colaborador adicionado com sucesso");
-
+    this.colaboradorForm.reset()
   }
 
 
