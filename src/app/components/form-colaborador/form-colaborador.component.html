@@ -30,7 +30,7 @@
         <input type="text" placeholder="Digite o salário" formControlName="salario" required>
     </div>
     <div class="buttons">
-        <button [disabled]="!colaboradorForm.valid" type="submit">Salvar</button>
+        <button [disabled]="!colaboradorForm.valid" type="submit">{{title}}</button>
         <button routerLink="" class="cancel-button">Cancelar</button>
     </div>
 </form>

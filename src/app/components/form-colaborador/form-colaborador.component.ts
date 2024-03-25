@@ -1,4 +1,4 @@
-import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter, Input } from '@angular/core';
 import { Colaborador } from '../../models/Colaboradores'; 
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MessagesService } from '../../services/messages.service';
@@ -12,6 +12,8 @@ export class FormColaboradorComponent implements OnInit {
  
 
 @Output() onSubimit = new EventEmitter<Colaborador>();
+// @Input() action!: string
+@Input() title!: string
 
 
 

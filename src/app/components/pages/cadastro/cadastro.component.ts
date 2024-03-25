@@ -9,6 +9,9 @@ import { ColaboradorService } from '../../../services/user.service';
 })
 export class CadastroComponent {
 
+
+  btnTitle = "Cadastiar Colaborador"
+
   constructor(private colaboradorService: ColaboradorService, ){}
 
   addColaborador(colaborador: Colaborador){
