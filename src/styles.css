@@ -38,7 +38,7 @@ label{
 }
 
 input{
-    padding: 0.9em;
+    padding: 0.9em 5em;
     margin: .2em 0;
     border: 1px solid #b9b9b9;
     border-radius: 5px;
@@ -92,7 +92,7 @@ input[type=submit]:hover, button:hover{
 select{
     border: 1px solid #b9b9b9;
     border-radius: 5px;
-    padding: .6em 1em;
+    padding: .9em 4em;
     margin-bottom: 20px;
     color: #606060;
 }
