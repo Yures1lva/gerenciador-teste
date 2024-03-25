@@ -12,6 +12,7 @@ export class EditarComponent implements OnInit {
   btnTitle= 'Editar'
   title='Edite um Colaborador'
   colaborador!: Colaborador 
+  message = "Colaborador Editado com sucesso!";
 
   constructor(private colaboradorService: ColaboradorService, private route: ActivatedRoute){
 

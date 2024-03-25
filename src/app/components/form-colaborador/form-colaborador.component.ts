@@ -15,6 +15,7 @@ export class FormColaboradorComponent implements OnInit {
 @Input() btnTitle!: string
 @Input() title!: string
 @Input() dadosColaborador: Colaborador | null = null ;
+@Input() message!: string
 
 
 
@@ -44,7 +45,7 @@ export class FormColaboradorComponent implements OnInit {
   submit(){
 
    this.onSubimit.emit(this.colaboradorForm.value)
-   this.messageService.add("Colaborador adicionado com sucesso");
+   this.messageService.add(this.message);
     this.colaboradorForm.reset()
   }
 

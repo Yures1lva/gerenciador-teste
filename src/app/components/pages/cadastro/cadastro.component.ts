@@ -12,6 +12,7 @@ export class CadastroComponent {
 
   btnTitle = "Cadastiar Colaborador"
   title = "Cadastre um novo Colaborador"
+  message = "Colaborador Cadastrado com sucesso!";
 
   constructor(private colaboradorService: ColaboradorService, ){}
 
