@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
-import { ColaboradorService } from '../../../services/user.service';
+import { ColaboradorService } from '../../../services/Colaborador/user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -11,6 +11,7 @@ export class CadastroComponent {
 
 
   btnTitle = "Cadastiar Colaborador"
+  title = "Cadastre um novo Colaborador"
 
   constructor(private colaboradorService: ColaboradorService, ){}
 

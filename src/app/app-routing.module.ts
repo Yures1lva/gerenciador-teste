@@ -4,12 +4,14 @@ import { ColaboradoresComponent } from './components/pages/colaboradores/colabor
 import { RelatoriosComponent } from './components/pages/relatorios/relatorios.component';
 import { HorasComponent } from './components/pages/horas/horas.component';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
+import { EditarComponent } from './components/pages/editar/editar.component';
 
 const routes: Routes = [
   {path:'', component: ColaboradoresComponent},
     {path:'relatorios', component: RelatoriosComponent},
     {path: 'horas', component: HorasComponent},
-    {path: 'cadastro', component: CadastroComponent}
+    {path: 'cadastro', component: CadastroComponent},
+    {path: 'editar/:id', component: EditarComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,8 @@
+<Section *ngIf="colaborador">
+    <app-form-colaborador 
+    [title]="title" 
+    [btnTitle]="btnTitle" 
+    [dadosColaborador]="colaborador" 
+    (onSubimit)="editarColaborador($event)"
+    ></app-form-colaborador>
+</Section>

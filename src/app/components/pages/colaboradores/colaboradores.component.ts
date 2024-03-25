@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
-import { ColaboradorService } from '../../../services/user.service';
+import { ColaboradorService } from '../../../services/Colaborador/user.service';
 
 
 

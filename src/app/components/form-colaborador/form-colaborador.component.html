@@ -1,9 +1,11 @@
 <section class="container-form container">
-    <h1>Adicione um novo Colaborador</h1>
+    <h1>{{title}}</h1>
     
 
 
 <form class="card" [formGroup]="colaboradorForm" (ngSubmit)="submit()">
+    <input type="hidden" formControlName="id">
+    
     <div class="form-group">
         <label for="">Nome:</label>
         <input type="text" placeholder="Digite o nome completo" formControlName="nome" required>
@@ -30,7 +32,7 @@
         <input type="text" placeholder="Digite o salário" formControlName="salario" required>
     </div>
     <div class="buttons">
-        <button [disabled]="!colaboradorForm.valid" type="submit">{{title}}</button>
+        <button [disabled]="!colaboradorForm.valid" type="submit">{{btnTitle}}</button>
         <button routerLink="" class="cancel-button">Cancelar</button>
     </div>
 </form>

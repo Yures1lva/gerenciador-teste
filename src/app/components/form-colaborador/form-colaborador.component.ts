@@ -12,8 +12,9 @@ export class FormColaboradorComponent implements OnInit {
  
 
 @Output() onSubimit = new EventEmitter<Colaborador>();
-// @Input() action!: string
+@Input() btnTitle!: string
 @Input() title!: string
+@Input() dadosColaborador: Colaborador | null = null ;
 
 
 
@@ -28,11 +29,11 @@ export class FormColaboradorComponent implements OnInit {
   ngOnInit(): void {
     
     this.colaboradorForm = new FormGroup({
-      id: new FormControl(0),
-      nome: new FormControl('', [Validators.required]),
-      matricula: new FormControl( 0, [Validators.required]),
-      cargo: new FormControl('',[Validators.required]),
-      salario: new FormControl(0,[Validators.required]),
+      id: new FormControl(this.dadosColaborador? this.dadosColaborador.id : 0),
+      nome: new FormControl(this.dadosColaborador? this.dadosColaborador.nome : '', [Validators.required]),
+      matricula: new FormControl(this.dadosColaborador? this.dadosColaborador.matricula : 0, [Validators.required]),
+      cargo: new FormControl(this.dadosColaborador? this.dadosColaborador.cargo :'',[Validators.required]),
+      salario: new FormControl(this.dadosColaborador? this.dadosColaborador.salario : 0,[Validators.required]),
 
     })
 

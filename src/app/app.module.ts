@@ -13,6 +13,7 @@ import { provideRouter } from '@angular/router';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessagesComponent } from './components/messages/messages.component';
+import { EditarComponent } from './components/pages/editar/editar.component';
 // import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { MessagesComponent } from './components/messages/messages.component';
     FormColaboradorComponent,
     CadastroComponent,
     MessagesComponent,
+    EditarComponent,
 
   ],
   imports: [
