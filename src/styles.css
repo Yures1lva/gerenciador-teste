@@ -104,3 +104,5 @@ button:disabled{
     border: 2px solid #717171;
     cursor: not-allowed;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

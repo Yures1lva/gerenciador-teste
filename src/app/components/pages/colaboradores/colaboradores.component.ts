@@ -1,7 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
 import { ColaboradorService } from '../../../services/Colaborador/user.service';
-import { MessagesService } from '../../../services/messages.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ExcluirComponent } from '../../excluir/excluir.component';
 
 
 
@@ -19,7 +20,10 @@ export class ColaboradoresComponent implements OnInit {
   // ColaboradoresTodos: Colaborador[] = []
 
 
-  constructor(private colaboradorService: ColaboradorService, public messageService: MessagesService){}
+  constructor(
+    private colaboradorService: ColaboradorService, 
+    public dialog: MatDialog
+    ){}
 
   ngOnInit(): void {
     this.colaboradorService.getColaboradores().subscribe((items) => {
@@ -31,8 +35,12 @@ export class ColaboradoresComponent implements OnInit {
     })
   }
 
-  excluir(){
-    this.messageService.add("Deseja realmente excluir o Colaborador?",)
+  OpenDialog(){
+    console.log("oi")
+    this.dialog.open(ExcluirComponent, {
+      width: '450px',
+      height: '450px'
+    })
   }
 
 

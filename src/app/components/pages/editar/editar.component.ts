@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EditarComponent implements OnInit {
   btnTitle= 'Editar'
-  title='Edite um Colaborador'
+  title='Edite ou exclua um Colaborador'
   colaborador!: Colaborador 
   message = "Colaborador Editado com sucesso!";
 

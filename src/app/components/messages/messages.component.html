@@ -6,14 +6,7 @@
     </div >
     <h1>{{messageService.message}}</h1>
     
-    <button *ngIf="!messageService.excluir"  routerLink=""  (click)="messageService.clear()" >Voltar a home</button>
+    <button   routerLink=""  (click)="messageService.clear()" >Voltar a home</button>
 
-
-    <div *ngIf="messageService.excluir">
-        <p class="alert">Isso vai excluir permanentemente o Colaborador dos dados da empresa</p>
-        
-        <button (click)="messageService.clear()" >Não</button>
-        <button class="cancel-button" >Sim</button>
-    </div>
 
 </div>

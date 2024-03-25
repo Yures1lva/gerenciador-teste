@@ -31,4 +31,8 @@ export class ColaboradorService {
   updateColaboradores(colaborador: Colaborador): Observable<Response<Colaborador[]>>{
     return this.http.put<Response<Colaborador[]>>(this.apiUrl, colaborador)
   }
+
+  deleteColaborador(id: number) : Observable<Response<Colaborador[]>>{
+    return this.http.delete<Response<Colaborador[]>>(`${this.apiUrl}?id=${id}`)
+  }
 }

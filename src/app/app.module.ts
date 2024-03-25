@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import {MatDialogModule} from '@angular/material/dialog';
 import {  HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,12 +9,13 @@ import { ColaboradoresComponent } from './components/pages/colaboradores/colabor
 import { RelatoriosComponent } from './components/pages/relatorios/relatorios.component';
 import { HorasComponent } from './components/pages/horas/horas.component';
 import { FormColaboradorComponent } from './components/form-colaborador/form-colaborador.component';
-import { provideRouter } from '@angular/router';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessagesComponent } from './components/messages/messages.component';
 import { EditarComponent } from './components/pages/editar/editar.component';
 import { DetalhesComponent } from './components/pages/detalhes/detalhes.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ExcluirComponent } from './components/excluir/excluir.component';
 // import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
@@ -29,6 +30,7 @@ import { DetalhesComponent } from './components/pages/detalhes/detalhes.componen
     MessagesComponent,
     EditarComponent,
     DetalhesComponent,
+    ExcluirComponent,
 
   ],
   imports: [
@@ -36,12 +38,14 @@ import { DetalhesComponent } from './components/pages/detalhes/detalhes.componen
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
 
   ],
   providers: [
     provideClientHydration(),
-    provideHttpClient(withFetch())
+    provideHttpClient(withFetch()),
+    provideAnimationsAsync()
     // {
     //   provide:HTTP_INTERCEPTORS,
     //   useClass: TokenInterceptor,

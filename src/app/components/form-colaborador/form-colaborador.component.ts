@@ -2,6 +2,7 @@ import { Component, OnInit, Output,EventEmitter, Input } from '@angular/core';
 import { Colaborador } from '../../models/Colaboradores'; 
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MessagesService } from '../../services/messages.service';
+import { ColaboradorService } from '../../services/Colaborador/user.service';
 
 @Component({
   selector: 'app-form-colaborador',
@@ -23,7 +24,7 @@ export class FormColaboradorComponent implements OnInit {
 
 
 
-  constructor(public messageService: MessagesService){
+  constructor(public messageService: MessagesService, private colaboradorService: ColaboradorService){
 
   }
 
@@ -47,7 +48,11 @@ export class FormColaboradorComponent implements OnInit {
    this.onSubimit.emit(this.colaboradorForm.value)
    this.messageService.add(this.message,);
     this.colaboradorForm.reset()
+  };
+
+  Excluir(){
+    
+    };
   }
 
 
-}
