@@ -2,31 +2,31 @@
 
 <section class="form-colaborador card">
 
-<form >
+<form [formGroup]="colaboradorForm" (ngSubmit)="submit()">
     <div class="form-group">
         <label for="">Nome:</label>
-        <input type="text" placeholder="nome" placeholder="Digite o nome completo" required>
+        <input type="text" placeholder="Digite o nome completo" formControlName="nome" required>
     </div>
 
     <div class="form-group">
-        <label for="">Matrícula:</label>
-        <input type="text" placeholder="Digite a matrícula" required>
+        <label for="matricula">Matrícula:</label>
+        <input  formControlName="matricula" placeholder="Digite a Matricula" required>
     </div>
 
     <div class="form-group">
         <label for="">Cargo:</label>
-        <select id="cargo" formControlName="cargo">
+        <select id="cargo" formControlName="cargo" >
+            <option  value="Analista_de_suporte">Analista de suporte</option>
+            <option  value="Analista_de_desenvolvimento_jr">Analista de desenvolvimento jr</option>
             <option  value="RH">RH</option>
-            <option  value="Analista de suporte">Analista de suporte</option>
-            <option  value="Analista de desenvolvimento jr">Analista de desenvolvimento jr</option>
-            <option  value="Tech Lead">Tech Lead</option>
+            <option  value="Tech_lead">Tech Lead</option>
 
         </select>    
     </div>
 
     <div class="form-group">
         <label for="">Salário:</label>
-        <input type="text" placeholder="Digite o salário" required>
+        <input type="text" placeholder="Digite o salário" formControlName="salario" required>
     </div>
     <div class="buttons">
         <input type="submit" value="Salvar">

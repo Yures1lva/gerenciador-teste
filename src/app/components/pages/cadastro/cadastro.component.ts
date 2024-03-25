@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Colaborador } from '../../../models/Colaboradores';
+import { ColaboradorService } from '../../../services/user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class CadastroComponent {
 
+  constructor(private colaboradorService: ColaboradorService, ){}
+
+  addColaborador(colaborador: Colaborador){
+    console.log(colaborador)
+    this.colaboradorService.creatColaborador(colaborador).subscribe((data) =>{
+      console.log(data)
+    })
+
+  }
 }

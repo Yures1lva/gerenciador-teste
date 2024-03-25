@@ -18,6 +18,9 @@ export class ColaboradorService {
 
   getColaboradores(): Observable<Response<Colaborador[]>>{
     return this.http.get<Response<Colaborador[]>>(this.apiUrl)
+  }
 
+  creatColaborador( colaborador: Colaborador): Observable<Response<Colaborador[]>>{
+    return this.http.post<Response<Colaborador[]>>(this.apiUrl, colaborador)
   }
 }

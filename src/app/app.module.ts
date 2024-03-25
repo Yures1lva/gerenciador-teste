@@ -11,6 +11,7 @@ import { HorasComponent } from './components/pages/horas/horas.component';
 import { FormColaboradorComponent } from './components/form-colaborador/form-colaborador.component';
 import { provideRouter } from '@angular/router';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
@@ -21,12 +22,16 @@ import { CadastroComponent } from './components/pages/cadastro/cadastro.componen
     RelatoriosComponent,
     HorasComponent,
     FormColaboradorComponent,
-    CadastroComponent
+    CadastroComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [
     provideClientHydration(),
