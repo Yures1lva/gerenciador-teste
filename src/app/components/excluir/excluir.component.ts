@@ -10,6 +10,7 @@ import { Colaborador } from '../../models/Colaboradores';
 })
 export class ExcluirComponent implements OnInit {
 
+
   inputData: any;
   colaborador!: Colaborador
 
@@ -35,5 +36,10 @@ export class ExcluirComponent implements OnInit {
     this.ref.close
     window.location.reload()
   })
+  }
+
+  cancelar() {
+    window.location.reload()
+
   }
 }
