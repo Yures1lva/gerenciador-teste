@@ -1,0 +1,13 @@
+article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article h3{
+    margin-right: 0.5em;
+}
+
+button{
+    margin-top: 1.2em;
+}

@@ -14,6 +14,7 @@ import { CadastroComponent } from './components/pages/cadastro/cadastro.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessagesComponent } from './components/messages/messages.component';
 import { EditarComponent } from './components/pages/editar/editar.component';
+import { DetalhesComponent } from './components/pages/detalhes/detalhes.component';
 // import { TokenInterceptor } from './components/interceptors/token.interceptor';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { EditarComponent } from './components/pages/editar/editar.component';
     CadastroComponent,
     MessagesComponent,
     EditarComponent,
+    DetalhesComponent,
 
   ],
   imports: [

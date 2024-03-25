@@ -1,0 +1,33 @@
+<section *ngIf="colaborador" class="container">
+    <h1>Detalhes de nome</h1>
+    <p>Aqui é possível ver todos os detalhes deste Colaborador</p>
+
+    <form class="card" action="">
+        <article class="">
+            <h3>Nome: </h3>
+            <p>{{colaborador.nome}}</p>
+        </article>
+
+        <article class="">
+            <h3>Matricula: </h3>
+            <p>{{colaborador.matricula}}</p>
+        </article>
+        
+        <article class="">
+            <h3>Cargo: </h3>
+            <p>{{colaborador.cargo}}</p>
+        </article>
+        
+        <article class="">
+            <h3>Salario: </h3>
+            <p>R${{colaborador.salario}}</p>
+        </article>
+        
+
+      
+
+        <button routerLink="">Volar para o início</button>
+        
+    </form>
+
+</section>
