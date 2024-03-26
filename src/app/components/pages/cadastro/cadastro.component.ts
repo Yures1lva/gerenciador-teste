@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
-import { ColaboradorService } from '../../../services/Colaborador/user.service';
+import { ColaboradorService } from '../../../services/Colaborador/colaborador.service';
 
 @Component({
   selector: 'app-cadastro',

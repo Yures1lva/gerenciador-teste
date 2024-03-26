@@ -2,6 +2,8 @@ const PROXY_CONFIG = [
     {
         context: [
             '/Colaborador',
+            '/Ponto'
+            
         ],
         target: "https://localhost:7039/api",
         secure: false,

@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Colaborador } from '../../../models/Colaboradores';
-import { ColaboradorService } from '../../../services/Colaborador/user.service';
+import { ColaboradorService } from '../../../services/Colaborador/colaborador.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ExcluirComponent } from '../../excluir/excluir.component';
 

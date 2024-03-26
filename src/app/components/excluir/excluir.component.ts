@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { ColaboradorService } from '../../services/Colaborador/user.service';
+import { ColaboradorService } from '../../services/Colaborador/colaborador.service';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Colaborador } from '../../models/Colaboradores';
 

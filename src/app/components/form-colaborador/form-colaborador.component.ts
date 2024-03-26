@@ -1,8 +1,8 @@
 import { Component, OnInit, Output,EventEmitter, Input } from '@angular/core';
 import { Colaborador } from '../../models/Colaboradores'; 
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MessagesService } from '../../services/messages.service';
-import { ColaboradorService } from '../../services/Colaborador/user.service';
+import { MessagesService } from '../../services/Messages/messages.service';
+import { ColaboradorService } from '../../services/Colaborador/colaborador.service';
 
 @Component({
   selector: 'app-form-colaborador',
