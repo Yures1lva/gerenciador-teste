@@ -9,39 +9,25 @@
 
     <h3>Selecione o funcionário</h3>
    <!-- picker de data aqui -->
-   <select name="dia" id="dia">
- 
-    <option value="1">funcionário 01</option>
-    <option value="2">funcionário 02</option>
-    <option value="3">funcionário 03</option>
-    <option value="4">funcionário 04</option>
-
-</select>
-
+   <form [formGroup]="horasForm" (ngSubmit)="submit()" >
+    <input type="hidden">
+    <select [(ngModel)]="colaboradorSelecionado" formControlName="colaboradorId"    >
+        <option value="{{item.id}}" *ngFor="let item of Colaboradores">
+        {{item.nome}}
+    </option>   
+        
+    </select>
     <br>
 
-    <p>selecione a data </p>
+    <div class="card">
+        <input  formControlName="hEntrada"  min="08:00" max="18:00">
+    </div>
 
-    <!-- picker de data aqui -->
-    <select name="dia" id="dia">
- 
-        <option value="1">dia 01</option>
-        <option value="2">dia 02</option>
-        <option value="3">dia 03</option>
-        <option value="4">dia 04</option>
+    <div class="card">
+        <input formControlName="hSaida"  min="08:00" max="18:00">
+    </div>
+    <input [disabled]="!horasForm.valid" type="submit" value="Bater ponto">
     
-    </select>
+   </form>
 
-    <form class="hours">
-        <div class="card">
-            <input type="time" min="08:00" max="18:00">
-        </div>
-
-        <div class="card">
-            <input type="time" min="08:00" max="18:00">
-        </div>
-        <input type="submit" value="Bater ponto">
-
-    </form>   
-    
 </section>

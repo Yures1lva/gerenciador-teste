@@ -24,7 +24,7 @@ export class FormColaboradorComponent implements OnInit {
 
 
 
-  constructor(public messageService: MessagesService, private colaboradorService: ColaboradorService){
+  constructor(public messageService: MessagesService,){
 
   }
 
@@ -36,7 +36,6 @@ export class FormColaboradorComponent implements OnInit {
       matricula: new FormControl(this.dadosColaborador? this.dadosColaborador.matricula : 0, [Validators.required]),
       cargo: new FormControl(this.dadosColaborador? this.dadosColaborador.cargo :'',[Validators.required]),
       salario: new FormControl(this.dadosColaborador? this.dadosColaborador.salario : 0,[Validators.required]),
-
     })
 
 
@@ -48,6 +47,7 @@ export class FormColaboradorComponent implements OnInit {
    this.onSubimit.emit(this.colaboradorForm.value)
    this.messageService.add(this.message,);
     this.colaboradorForm.reset()
+    console.log(this.colaboradorForm.value)
   };
 
   Excluir(){

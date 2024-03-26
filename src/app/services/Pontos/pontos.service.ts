@@ -18,4 +18,8 @@ export class PontosService {
   getPontos(): Observable<Response<Pontos[]>>{
     return this.http.get<Response<Pontos[]>>(this.apiUrl)
   }
+
+  creatPontos( ponto: Pontos): Observable<Response<Pontos[]>>{
+    return this.http.post<Response<Pontos[]>>(this.apiUrl, ponto)
+  }
 }
