@@ -6,7 +6,7 @@
     <button   routerLink="/cadastro" >Cadastrar Colaborador</button>
 
 
-    <table class="card">
+    <table  class="card">
         <thead>
             <tr>
                 <th><h4>Nome</h4></th>
@@ -16,7 +16,7 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody *ngFor="let item of Colaboradores">
+        <tbody  *ngFor="let item of Colaboradores">
             <tr>
                 <td><h4>{{item.nome}}</h4></td>
                 <td><h4>{{item.cargo}}</h4></td>
@@ -32,7 +32,12 @@
         </tbody>
 
     </table>
-
+    <ng-template #semColaborador >
+        <br>
+        <br>
+    <h3 class="alert">Nenhum Colaborador existente, crie um clicando em cadastrar!</h3>
+    </ng-template>
+    <br><br>
 
 
 </section>

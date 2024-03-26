@@ -13,7 +13,7 @@ import { ExcluirComponent } from '../../excluir/excluir.component';
 })
 export class ColaboradoresComponent implements OnInit {
 
- 
+ colaborador!: Colaborador
 
   Colaboradores: Colaborador[] = []
 

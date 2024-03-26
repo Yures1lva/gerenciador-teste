@@ -97,6 +97,13 @@ select{
     color: #606060;
 }
 
+select option{
+    color: #606060;
+    margin: 2em 0 ;
+    font-size: medium;
+
+}
+
 button:disabled{
     background-color: #b0b0b0;
     color: #434343;

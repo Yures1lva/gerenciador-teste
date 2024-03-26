@@ -1,7 +1,28 @@
 <section class="container-relatorio container">
     <h1>Relatório de horas trabalhadas</h1>
 
-    <p>Aqui você pode acompanhar o desempenho semanal de cada colaborador</p>
+    <h3>Aqui você pode acompanhar o desempenho semanal de cada colaborador, selecione o Colaborador</h3>
+
+    <form action="">
+        <select >
+            <option *ngFor="let items of Colaboradores" value="{{items.nome}}">{{items.nome}}</option>   
+        </select>
+        <input type="submit" value="Ver relatório de Horas">
+    </form>
+
+    <table  class="card">
+        <thead>
+            <tr>
+                <th><h1>Entrada ----- Saída</h1></th>
+            </tr>
+        </thead>
+        <tbody  *ngFor="let item of Pontos">
+            <tr>
+                <td> <h2>Dia: 24/5</h2> <h4>{{item.hEntrada}}--{{item.hSaida}}</h4></td>
+            </tr>
+        </tbody>
+
+    </table>
 
 
     <div class="container-cards">
@@ -16,48 +37,7 @@
             </div>
         </div>
 
-        <div class="card">
-            <h4 class="semana">dia 01 à dia 05</h4>
-            <div class="horas">
-                <p>07:55 -- 18:16</p>
-                <p>07:50 -- 17:55</p>
-                <p>08:05 -- 18:00</p>
-                <p>07:51 -- 18:10</p>
-                <p>07:59 -- 18:12</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h4 class="semana">dia 01 à dia 05</h4>
-            <div class="horas">
-                <p>07:55 -- 18:16</p>
-                <p>07:50 -- 17:55</p>
-                <p>08:05 -- 18:00</p>
-                <p>07:51 -- 18:10</p>
-                <p>07:59 -- 18:12</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h4 class="semana">dia 01 à dia 05</h4>
-            <div class="horas">
-                <p>07:55 -- 18:16</p>
-                <p>07:50 -- 17:55</p>
-                <p>08:05 -- 18:00</p>
-                <p>07:51 -- 18:10</p>
-                <p>07:59 -- 18:12</p>
-            </div>
-        </div>
-        <div class="card">
-            <h4 class="semana">dia 01 à dia 05</h4>
-            <div class="horas">
-                <p>07:55 -- 18:16</p>
-                <p>07:50 -- 17:55</p>
-                <p>08:05 -- 18:00</p>
-                <p>07:51 -- 18:10</p>
-                <p>07:59 -- 18:12</p>
-            </div>
-        </div>
+        
     </div>
 
 </section>

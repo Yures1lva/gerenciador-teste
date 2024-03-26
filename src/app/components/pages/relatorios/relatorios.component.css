@@ -1,7 +1,8 @@
 .semana{
-    border: 1px solid #414141;
-    border-radius: 5px;
-    padding: 0.2em;
+    border-bottom: 1px solid #414141;
+    margin: .6em 0;
+    padding: 0 1em;
+    font-weight: 500;
     align-items: center;
     text-align: center;
 }
@@ -17,4 +18,26 @@
 .card{
     text-align: center;
     margin: .5em 0;
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 2em;
+}
+
+td{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+h1{
+    border: 0;
+}
+td > h2{
+    margin-right: .5em;
 }
