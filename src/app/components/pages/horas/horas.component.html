@@ -7,26 +7,25 @@
         como não tem sistema de autenticação na aplicação, essa aba simula a funcionalidade de um colaborador após o login!
     </p>
 
-    <h3>Selecione o funcionário</h3>
    <!-- picker de data aqui -->
    <form [formGroup]="horasForm" (ngSubmit)="submit()" >
-    <input type="hidden">
-    <select [(ngModel)]="colaboradorSelecionado" formControlName="colaboradorId"    >
-        <option value="{{item.id}}" *ngFor="let item of Colaboradores">
-        {{item.nome}}
-    </option>   
+    <h3>Selecione o funcionário </h3>
+    <select  [(ngModel)]="colaboradorSelecionado" formControlName="colaboradorId">
+
+        <option value="{{item.id}}" *ngFor="let item of Colaboradores">{{item.nome}}</option>   
         
     </select>
     <br>
 
-    <div class="card">
-        <input  formControlName="hEntrada"  min="08:00" max="18:00">
-    </div>
+    <div class="card hours">
+        <label for="hEntrada">Digite a Hora de entrada:</label>
+        <input class="inputHours"  formControlName="hEntrada"  min="08:00" max="18:00">
 
-    <div class="card">
-        <input formControlName="hSaida"  min="08:00" max="18:00">
+        <label class="hSaida" for="hSaida">Digite a Hora de saída:</label>
+        <input class="inputHours" formControlName="hSaida"  min="08:00" max="18:00">
+
+        <input class="submitHours" [disabled]="!horasForm.valid" type="submit" value="Bater ponto">
     </div>
-    <input [disabled]="!horasForm.valid" type="submit" value="Bater ponto">
     
    </form>
 

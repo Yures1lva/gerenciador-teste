@@ -10,7 +10,7 @@ import { ColaboradorService } from '../../../services/Colaborador/colaborador.se
 export class CadastroComponent {
 
 
-  btnTitle = "Cadastiar Colaborador"
+  btnTitle = "Cadastrar Colaborador"
   title = "Cadastre um novo Colaborador"
   message = "Colaborador Cadastrado com sucesso!";
 

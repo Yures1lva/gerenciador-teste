@@ -38,10 +38,11 @@ label{
 }
 
 input{
-    padding: 0.9em 10em 0.9em 1em;
+    padding: 0.9em 1em 0.9em 1em;
     margin: .2em 0;
     border: 1px solid #b9b9b9;
     border-radius: 5px;
+    min-width: 300px;
 }
 
 input[type=submit], button{

@@ -19,7 +19,7 @@ export class HorasComponent implements OnInit  {
   Colaboradores: Colaborador[] = []
   colaborador: Colaborador | null = null
 
- colaboradorSelecionado: Number = 0; 
+  colaboradorSelecionado: Number = 0; 
 
   horasForm!: FormGroup
  

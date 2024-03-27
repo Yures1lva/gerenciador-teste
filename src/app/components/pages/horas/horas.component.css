@@ -1,14 +1,24 @@
+h3{
+    margin: 0;
+    text-decoration: underline;
+}
+
+
 select{
     border:1px solid #073A78;
     border-radius: 5px;
     padding: .6em 1em;
     margin-bottom: 20px;
+    width: 350px;
     color: #606060;
 }
 
+
+
 .hours{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 320px;
 }
 
 .card{
@@ -17,6 +27,15 @@ select{
     /* width: 40px; */
 }
 
-input{
-    /* width: 3em; */
+.hSaida{
+    margin-top: 2em;
+}
+
+.inputHours{
+    padding: 1em .5em;
+}
+
+
+.submitHours{
+    margin-top: 2em;
 }
