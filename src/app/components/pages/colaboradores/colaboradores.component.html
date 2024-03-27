@@ -20,13 +20,16 @@
             <tr>
                 <td><h4>{{item.nome}}</h4></td>
                 <td><h4>{{item.cargo}}</h4></td>
+                
                 <td>
                     <button class="detalhes" routerLink="detalhes/{{item.id}}" >Detalhes</button>
                 </td>
+                
                 <td>
                     <button routerLink="editar/{{item.id}}">Editar</button>
 
                 </td>
+                
                 <td  ><button (click)="OpenDialog(item.id)" class="cancel-button">Excluir</button></td>
             </tr>
         </tbody>
