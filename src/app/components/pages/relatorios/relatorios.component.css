@@ -31,10 +31,11 @@ form{
 td, th{
    padding: 0 3em;
 }
-
-h1{
-    border: 0;
+h3{
+    padding-top: 1em;
+    font-weight: 700;
 }
+
 td > h2{
     margin-right: .5em;
 }
